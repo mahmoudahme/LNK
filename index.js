@@ -60,7 +60,9 @@ app.use("/api/commercial", commercialRouter);
 app.use("/api/filter", searchRouter);
 app.use("/api/user", userRouter);
 app.use("/api", otpRouter);
-
+app.get("/",(req, res)=>{
+  res.send("APi is Working")
+})
 //global error Middleware
 app.use(globalError);
 
